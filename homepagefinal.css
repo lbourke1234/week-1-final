@@ -1,7 +1,7 @@
 /* scrolling */
 
 html::-webkit-scrollbar {
-    width: 0.95vw;
+    width: .1vw;
     z-index: 6;
 }
 html::-webkit-scrollbar-thumb {
@@ -64,6 +64,9 @@ body {
     height: 5vw;
     /* margin-bottom: 10px; */
 }
+.first-section p {
+    /* font-weight: 600; */
+}
 .row-remove-margin {
     margin-bottom: -8px;
     margin-left: -1px;
@@ -87,7 +90,7 @@ body {
 }
 .card-body-section2 p {
     color: rgb(177, 174, 174);
-    font-size: 1.4em;
+    font-size: 1.1em;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
@@ -96,7 +99,7 @@ body {
     
 }
 .card-body-section2 h5 {
-    font-size: 1.4em;
+    font-size: 1.2em;
     font-weight: 700;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -110,7 +113,7 @@ body {
 }
 .card-body-section3 p {
     color: rgb(177, 174, 174);
-    font-size: 1.4em;
+    font-size: 1.1em;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
@@ -118,7 +121,7 @@ body {
     -webkit-box-orient: vertical;
 }
 .card-body-section3 h5 {
-    font-size: 1.4em;
+    font-size: 1.2em;
     font-weight: 700;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -548,4 +551,79 @@ body > footer > div > div > div:nth-child(1) > div > div:nth-child(1) {
 }
 .progress-row {
     padding-bottom: 12px;
+}
+
+/* hovering */
+.card:hover {
+    box-shadow: 5px 10px 10px 5px rgb(175, 173, 173);
+}
+.green-play-img {
+    height: 50px;
+    border-radius: 50%;
+    visibility: hidden;
+}
+.first-section .card:hover .green-play-img {
+    visibility: visible;
+}
+
+.fourth-section-card {
+    min-height: 370px;
+    max-height: 370px;
+}
+.section-4-img {
+    position:absolute;
+    right: 30px;
+    bottom: 170px;
+    /* visibility: hidden; */
+}
+.fourth-section-card:hover .green-play-img {
+    visibility: visible;
+}
+.green-play-img:hover {
+    height: 52px;
+}
+.btn-primary:hover {
+    color: #fff;
+    background-color: transparent;
+    border-color: transparent;
+    text-decoration: underline;
+}
+.p-song-name:hover {
+    text-decoration: underline;
+    cursor:pointer
+}
+.p-artist-name:hover {
+    text-decoration: underline;
+    cursor:pointer
+}
+.bi-heart:hover {
+    color: rgb(127, 122, 122)
+}
+.bi-image:hover {
+    color: rgb(127, 122, 122)
+}
+.bi-image:hover {
+    color: rgb(127, 122, 122)
+}
+.bi-list:hover {
+    color: rgb(127, 122, 122)
+}
+.bi-tv:hover {
+    color: rgb(127, 122, 122)
+}
+.bi-play-circle:hover {
+    color: rgb(127, 122, 122)
+}
+.bi-shuffle:hover {
+    color: rgb(127, 122, 122)
+}
+.bi-skip-backward:hover {
+    color: rgb(127, 122, 122)
+
+}
+.bi-skip-forward:hover {
+    color: rgb(127, 122, 122)
+}
+.bi-arrow-repeat:hover {
+    color: rgb(127, 122, 122)
 }
