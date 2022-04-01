@@ -97,7 +97,7 @@ body
 }
 
 .arrows {
-    position: absolute;
+    position: fixed;
     top: 0;
     padding-top: 15px;
     padding-left: 15px;
@@ -118,7 +118,7 @@ body
 }
 
 .profile-picture-button {
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     padding-right: 15px;

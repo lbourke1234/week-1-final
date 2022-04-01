@@ -1,4 +1,4 @@
- 
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
  
  
  /*---------- scroll bar --------------*/
@@ -92,15 +92,23 @@ body {
 }
 
 .bi-play-circle-fill {
-    color: #12e25b;
+    color: #20c158;
     font-size: 4em;
     cursor: pointer;
 }
-.bi-heart {
+.bi-play-circle-fill:hover {
+    color: #16f765;
+}
+.heart-icon {
+    padding-top: 20px;
     color: #b5b5b5;
     font-size: 35px;
     align-content: center;
     cursor: pointer;
+}
+.bi-heart:hover{
+color: rgb(167, 6, 179);
+
 }
 #page-heart-icon {
     padding-top: 20px;
@@ -109,7 +117,9 @@ body {
 }
 #page-dots-icon {
     padding: 20px 0px 20px 0px;
-    margin-left: -45px;
+    margin-left: -35px;
+    cursor: pointer;
+    padding-top: 45px;
 }
 #play-heart-dots {
     padding-left: 30px;
@@ -151,6 +161,7 @@ body {
     margin-left: 60px;
     font-size: 14px;
 }
+
 .hashtag-title {
     margin-left: 20px;
 }
@@ -162,5 +173,7 @@ body {
 #midnigth-protocol {
     margin-left: -9px;
 }
+
+
 
 /*  ------------- scroll bar main  ----------------------------*/
