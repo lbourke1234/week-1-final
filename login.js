@@ -1,4 +1,5 @@
-function validateSignupForm() {
+function validateSignupForm(event) {
+  event.preventDefault();
   let mail = document.getElementById("signEmail").value;
   let name = document.getElementById("signName").value;
   let password = document.getElementById("signPassword").value;
@@ -16,12 +17,14 @@ function validateSignupForm() {
       "Your password must include at least 8 characters";
     return false;
   } else {
-    alert("Successfully signed up");
+    // alert("Successfully signed up");
+    location.href = "/login.html";
     return true;
   }
 }
 
-function validateLoginForm() {
+function validateLoginForm(event) {
+  event.preventDefault();
   let loginEmail = document.getElementById("logEmail").value;
   let loginPassword = document.getElementById("logPassword").value;
 
@@ -36,7 +39,8 @@ function validateLoginForm() {
     alert("Your password must include at least 8 characters");
     return false;
   } else {
-    alert("Successfully logged in");
+    // alert("Successfully logged in");
+    location.href = "/homepagefinal.html";
     return true;
   }
 }
