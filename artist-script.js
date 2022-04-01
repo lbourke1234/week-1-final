@@ -27,7 +27,6 @@ let seeMoreTextFunction = (event) => {
     console.log(event)
     let table = document.querySelector(".table");
     let newTr = document.createElement("tr");
-    /* newTr.classList */
     table.appendChild(newTr)
     newTr.innerHTML = `
     <th scope="row">4</th>
@@ -96,25 +95,7 @@ let removeHalfHearts = () => {
 
 
 
-/* THIS IS THE PLAY - PAUSE BUTTON SWITCH FUNCTIONALITY */ 
-/* 
-let showPauseButton = () => {
-     let playButton = document.querySelector(".bi-play-circle-fill");
-     let pauseButton = document.querySelector(".pause-button");
-     playButton.classList.add("play-button-hide");
-     pauseButton.classList.add("pause-button-showing")
-    }
-
-    let showPlayButton = () => {
-     let playButton = document.querySelector(".bi-play-circle-fill");
-     let pauseButton = document.querySelector(".pause-button");
-     playButton.classList.remove("play-button-hide");
-     pauseButton.classList.remove("pause-button-showing")
-    }
- */
     /* THIS IS THE PLAY - PAUSE BUTTON SWITCH FUNCTIONALITY */ 
-
-/* This is the new play Pause button I am trying to make  */
     let showPauseButton = () => {
         let playButton = document.querySelector(".big-play-button");
         let pauseButton = document.querySelector(".pause-button");
