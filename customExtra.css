@@ -21,26 +21,28 @@
     transform: scaleX(1);
     transform-origin: left;
 }
-.#album-track-list > div:nth-child(1):hover{
- background-color:rgba(112, 112, 112, 0.729) ;
-}
+
 
 
 /*---------------- play and pause -----------------*/
 .pause-icon{
-    opacity: 0;
+  opacity: 1;
+  color:  #0cad44;
+  font-size: 4em;
+  cursor: pointer;
 }
-.show-pause-icon{
-    opacity: 1;
-    color:  #0cad44;
-    font-size: 4em;
-    cursor: pointer;
-    
-}
-.hide-play-icon{
-    visibility: hidden;
+.pause-icon:hover {
+  color: #16f765;
 }
 
+
+/*----------------- Pink Heart -------------------*/
 .solid-heart-icon{
-    opacity: 0;
+  opacity: 1;
+  color:  #ad0c92;
+  font-size: 4em;
+  cursor: pointer;
+}
+.solid-heart-icon:hover {
+  color: #e816f7;
 }

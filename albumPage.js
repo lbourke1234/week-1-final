@@ -2,39 +2,25 @@
 
 // play pause button
 
-  function showPauseIcon(){
-    let playIcon = document.querySelector("#page-play-icon");
-    let pauseIcon = document.querySelector(".pause-icon");
-    playIcon.classList.add("hide-play-icon");
-    pauseIcon.classList.add("show-pause-icon");
+let showPauseButton = (event) => {   
+    let playIcon = document.querySelector("#play-pause-button-id");
+    console.log(event)
+    //let pauseIcon = document.querySelector(".pause-icon");
+    if(playIcon.classList.value === "bi bi-play-circle-fill big-play-button"){
+      playIcon.classList.value = "bi bi-pause-circle-fill pause-icon"; 
+    } else {
+      playIcon.classList.value = "bi bi-play-circle-fill big-play-button";
+    } 
    }
 
-   function showPlayIcon(){
-    let playIcon = document.querySelector("#page-play-icon");
-    let pauseIcon = document.querySelector(".pause-icon");
-    playIcon.classList.remove("play-button-hide");
-    pauseIcon.classList.remove("pause-button-showing");  
+   let showPinkHeart = (event) => {   
+    let playIcon = document.querySelector(".bi bi-heart heart-icon");
+    console.log(event)
+    //let pauseIcon = document.querySelector(".pause-icon");
+    if(playIcon.classList.value === "bi bi-hear heart-icon"){
+      playIcon.classList.value = "bi bi-heart-fill solid-heart-icon"; 
+    } else {
+      playIcon.classList.value = "bi bi-heart heart-icon";
+    } 
+
    }
-
-
-// heart icon to solid red on click
-
-   function likedSong(){
-    let heart = document.querySelector("bi bi-heart");
-    heart.classList.add("solid-heart-icon");
-   }
-
-   // music player toggle visibility
-
-   
-  let musicPlayer = document.querySelector(".audio-player");
-  let HidePlayer = document.querySelector(".album-song");
-  onclick=function(){
-      musicPlayer.style.visibility = "hidden";
-
-  }
-  ondlclick=function(){
-      musicPlayer.style.visibility = "visible";
-  }
-
-  
