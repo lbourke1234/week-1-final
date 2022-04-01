@@ -1,6 +1,6 @@
 
 ::-webkit-scrollbar {
-    width: .5vw;
+    width: .2vw;
     z-index: 6;
 }
 ::-webkit-scrollbar-thumb {
@@ -479,7 +479,7 @@ body > footer > div > div > div:nth-child(1) > div > div:nth-child(1) {
 }
 .first-section .card:hover .green-play-img {
     visibility: visible;
-    animation: new_row 1.5s linear;
+    animation: new_row .5s linear;
     
 }
 .fourth-section-card:hover .green-play-img {
@@ -502,6 +502,7 @@ body > footer > div > div > div:nth-child(1) > div > div:nth-child(1) {
 }
 .green-play-img:hover {
     height: 52px;
+    cursor: pointer;
     animation: green_play_height 5s linear;
 
 }

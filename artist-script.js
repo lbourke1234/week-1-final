@@ -116,4 +116,12 @@ let removeHalfHearts = () => {
         }
  */
 
-                   }
+  }
+
+
+  let redirectToAlbumPage = (event) => {
+    location.href = "albumpage.html";
+    console.log(event);
+  }
+
+                

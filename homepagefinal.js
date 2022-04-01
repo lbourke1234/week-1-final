@@ -2,6 +2,7 @@ window.onload = function() {
     addGreenPlayImgEventListener()
     addListenerToLoveHeart()
     addListenerToFirstButton()
+    addEventToArtistName()
     }
 
 
@@ -33,7 +34,7 @@ function showOrHideHeart() {
 function addListenerToFirstButton () {
     let seeAllBtnNode = document.querySelectorAll('.see-all-btn')
     seeAllBtnNode[0].addEventListener('click', addNewRow)
-    console.log(seeAllBtnNode)
+    // console.log(seeAllBtnNode)
 }
 
 function addNewRow() {
@@ -42,4 +43,11 @@ function addNewRow() {
     newRowNode.classList.toggle('new-row-animation')
 
     console.log('done')
+}
+function addEventToArtistName() {
+    let artistNode = document.querySelector('.p-artist-name')
+    artistNode.addEventListener('click', changePage)
+}
+function changePage (e) {
+    location.href = "/artist.html";
 }

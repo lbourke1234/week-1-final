@@ -3,23 +3,23 @@
  
  /*---------- scroll bar --------------*/
 
-html::-webkit-scrollbar {
-    width: 0.95vw;
+::-webkit-scrollbar {
+    width: 0.2vw;
     z-index: 6;
 }
-html::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
     background: rgba(170, 170, 170, 0.708);
     height: 1rem;
     z-index: 6;
 }
-html::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
     background-color: rgba(255, 255, 255, 0);
     height: 80vh;
     z-index: 6;
    
 }
 
-html::-webkit-scrollbar-thumb:hover {
+::-webkit-scrollbar-thumb:hover {
     background: rgba(123, 123, 123, 0.871);
     z-index: 6;
 }

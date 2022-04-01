@@ -85,6 +85,12 @@ body > div > div.sidebar.pl-3 > div.p-lists > p:hover {
     scrollbar-width: auto;
     height: 600px;
 }
+.p-lists p:hover {
+    color: white;
+}
+.sidebar .flex-column > div:hover {
+    background: rgb(49, 41, 41);
+}
 
 .list-with-scroll-bar {
     overflow-y: scroll;
