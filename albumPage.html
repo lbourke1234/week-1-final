@@ -20,7 +20,7 @@
         <link rel="stylesheet" href="sideNav.css" />
         <link rel="stylesheet" href="topNav.css" />
         <link rel="stylesheet" href="footer2.css" />
-        <link rel="stylesheet" href="albumAudio.css" />
+        <link rel="stylesheet" href="customExtra.css" />
 
         <title>Spotify Album Page</title>
     </head>
@@ -195,10 +195,24 @@
                                             height="50"
                                             fill="currentColor"
                                             class="bi bi-play-circle-fill"
+                                            onclick="showPauseIcon()"
                                             viewBox="0 0 16 16"
                                         >
                                             <path
                                                 d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"
+                                            />
+                                        </svg>
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="50"
+                                            height="50"
+                                            fill="currentColor"
+                                            class="bi bi-pause-circle-fill pause-icon"
+                                            onclick="showPlayIcon()"
+                                            viewBox="0 0 16 16"
+                                        >
+                                            <path
+                                                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.25 5C5.56 5 5 5.56 5 6.25v3.5a1.25 1.25 0 1 0 2.5 0v-3.5C7.5 5.56 6.94 5 6.25 5zm3.5 0c-.69 0-1.25.56-1.25 1.25v3.5a1.25 1.25 0 1 0 2.5 0v-3.5C11 5.56 10.44 5 9.75 5z"
                                             />
                                         </svg>
                                     </div>
@@ -217,6 +231,19 @@
                                         >
                                             <path
                                                 d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"
+                                            />
+                                        </svg>
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="25"
+                                            height="25"
+                                            fill="currentColor"
+                                            class="bi bi-heart-fill solid-heart-icon"
+                                            viewBox="0 0 16 16"
+                                        >
+                                            <path
+                                                fill-rule="evenodd"
+                                                d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"
                                             />
                                         </svg>
                                     </div>
@@ -285,8 +312,9 @@
                                     <div id="album-track-list" class="col-5">
                                         <div class="ml-3 pb-4">
                                             <span class="track-num">1.</span>
-                                            <span class="ml-4"
+                                            <span class="album-song ml-4"
                                                 ><strong
+                                                    class="track-decoration"
                                                     >20th century fox
                                                     Fanfare</strong
                                                 ><br /><span class="singer-name"
@@ -296,8 +324,9 @@
                                         </div>
                                         <div class="ml-3 pb-4">
                                             <span class="track-num">2.</span>
-                                            <span class="ml-4"
+                                            <span class="album-song ml-4"
                                                 ><strong
+                                                    class="track-decoration"
                                                     >Somebody To Love</strong
                                                 ><br /><span class="singer-name"
                                                     >Queen</span
@@ -306,19 +335,21 @@
                                         </div>
                                         <div class="ml-3 pb-4">
                                             <span class="track-num">3.</span>
-                                            <span class="ml-4"
+                                            <span class="album-song ml-4"
                                                 ><strong
+                                                    class="track-decoration"
                                                     >Doing All Right-
                                                     ...Revisited</strong
                                                 ><br /><span class="singer-name"
-                                                    >Smile</span
+                                                    >Queen</span
                                                 ></span
                                             >
                                         </div>
                                         <div class="ml-3 pb-4">
                                             <span class="track-num">4.</span>
-                                            <span class="ml-4"
+                                            <span class="album-song ml-4"
                                                 ><strong
+                                                    class="track-decoration"
                                                     >Keep Yourself Alive - Live
                                                     At The Rainbow</strong
                                                 ><br /><span class="singer-name"
@@ -328,8 +359,10 @@
                                         </div>
                                         <div class="ml-3 pb-4">
                                             <span class="track-num">5.</span>
-                                            <span class="ml-4"
-                                                ><strong>Killer Queen</strong
+                                            <span class="album-song ml-4"
+                                                ><strong
+                                                    class="track-decoration"
+                                                    >Killer Queen</strong
                                                 ><br /><span class="singer-name"
                                                     >Queen</span
                                                 ></span
@@ -337,8 +370,9 @@
                                         </div>
                                         <div class="ml-3 pb-4">
                                             <span class="track-num">6.</span>
-                                            <span class="ml-4"
+                                            <span class="album-song ml-4"
                                                 ><strong
+                                                    class="track-decoration"
                                                     >Fat Bottomed Girls - Live
                                                     In Paris</strong
                                                 ><br /><span class="singer-name"
@@ -348,8 +382,9 @@
                                         </div>
                                         <div class="ml-3 pb-4">
                                             <span class="track-num">7.</span>
-                                            <span class="ml-4"
+                                            <span class="album-song ml-4"
                                                 ><strong
+                                                    class="track-decoration"
                                                     >Bohemain Rhaposdy</strong
                                                 ><br /><span class="singer-name"
                                                     >Queen</span
@@ -358,8 +393,9 @@
                                         </div>
                                         <div class="ml-3 pb-4">
                                             <span class="track-num">8.</span>
-                                            <span class="ml-4"
+                                            <span class="album-song ml-4"
                                                 ><strong
+                                                    class="track-decoration"
                                                     >Now I'm Here - Live At The
                                                     Hammersmith Odeon</strong
                                                 ><br /><span class="singer-name"
@@ -369,8 +405,9 @@
                                         </div>
                                         <div class="ml-3 pb-4">
                                             <span class="track-num">9.</span>
-                                            <span class="ml-4"
+                                            <span class="album-song ml-4"
                                                 ><strong
+                                                    class="track-decoration"
                                                     >Creazy Little Thing Called
                                                     Love</strong
                                                 ><br /><span class="singer-name"
@@ -380,8 +417,10 @@
                                         </div>
                                         <div class="ml-3 pb-4">
                                             <span class="track-num">10.</span>
-                                            <span class="ml-4"
-                                                ><strong id="midnigth-protocol"
+                                            <span class="album-song ml-4"
+                                                ><strong
+                                                    id="midnigth-protocol"
+                                                    class="track-decoration"
                                                     >Midnigth protocol</strong
                                                 ><br /><span class="singer-name"
                                                     >Queen</span
@@ -394,70 +433,7 @@
                                             <audio
                                                 class="audio-player"
                                                 controls
-                                                src="/media/cc0-audio/t-rex-roar.mp3"
-                                            >
-                                                <code>audio</code> element.
-                                            </audio>
-                                            <audio
-                                                class="audio-player"
-                                                controls
-                                                src="/media/cc0-audio/t-rex-roar.mp3"
-                                            >
-                                                <code>audio</code> element.
-                                            </audio>
-                                            <audio
-                                                class="audio-player"
-                                                controls
-                                                src="/media/cc0-audio/t-rex-roar.mp3"
-                                            >
-                                                <code>audio</code> element.
-                                            </audio>
-                                            <audio
-                                                class="audio-player"
-                                                controls
-                                                src="/media/cc0-audio/t-rex-roar.mp3"
-                                            >
-                                                <code>audio</code> element.
-                                            </audio>
-                                            <audio
-                                                class="audio-player"
-                                                controls
-                                                src="/media/cc0-audio/t-rex-roar.mp3"
-                                            >
-                                                <code>audio</code> element.
-                                            </audio>
-                                            <audio
-                                                class="audio-player"
-                                                controls
-                                                src="/media/cc0-audio/t-rex-roar.mp3"
-                                            >
-                                                <code>audio</code> element.
-                                            </audio>
-                                            <audio
-                                                class="audio-player"
-                                                controls
-                                                src="/media/cc0-audio/t-rex-roar.mp3"
-                                            >
-                                                <code>audio</code> element.
-                                            </audio>
-                                            <audio
-                                                class="audio-player"
-                                                controls
-                                                src="/media/cc0-audio/t-rex-roar.mp3"
-                                            >
-                                                <code>audio</code> element.
-                                            </audio>
-                                            <audio
-                                                class="audio-player"
-                                                controls
-                                                src="/media/cc0-audio/t-rex-roar.mp3"
-                                            >
-                                                <code>audio</code> element.
-                                            </audio>
-                                            <audio
-                                                class="audio-player"
-                                                controls
-                                                src="/media/cc0-audio/t-rex-roar.mp3"
+                                                href="https://soundcloud.com/queennaija_music/queen-medicine-official-audio?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"
                                             >
                                                 <code>audio</code> element.
                                             </audio>
@@ -560,7 +536,7 @@
                 </div>
             </div>
         </footer>
-
+        <script src="albumPage.js"></script>
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"

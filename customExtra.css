@@ -1,0 +1,46 @@
+
+
+/*--------------- track list----------------------*/
+.track-decoration{
+    position: relative;
+}
+.track-decoration::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: rgba(200, 3, 167, 0.696);
+
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 250ms ease-in;
+}
+.track-decoration:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+.#album-track-list > div:nth-child(1):hover{
+ background-color:rgba(112, 112, 112, 0.729) ;
+}
+
+
+/*---------------- play and pause -----------------*/
+.pause-icon{
+    opacity: 0;
+}
+.show-pause-icon{
+    opacity: 1;
+    color:  #0cad44;
+    font-size: 4em;
+    cursor: pointer;
+    
+}
+.hide-play-icon{
+    visibility: hidden;
+}
+
+.solid-heart-icon{
+    opacity: 0;
+}
