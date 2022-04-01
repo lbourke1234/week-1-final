@@ -13,14 +13,4 @@ let showPauseButton = (event) => {
     } 
    }
 
-   let showPinkHeart = (event) => {   
-    let playIcon = document.querySelector(".bi bi-heart heart-icon");
-    console.log(event)
-    //let pauseIcon = document.querySelector(".pause-icon");
-    if(playIcon.classList.value === "bi bi-hear heart-icon"){
-      playIcon.classList.value = "bi bi-heart-fill solid-heart-icon"; 
-    } else {
-      playIcon.classList.value = "bi bi-heart heart-icon";
-    } 
-
-   }
+   

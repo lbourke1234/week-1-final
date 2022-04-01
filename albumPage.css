@@ -99,7 +99,8 @@ body {
 .bi-play-circle-fill:hover {
     color: #16f765;
 }
-.bi-heart {
+.heart-icon {
+    padding-top: 20px;
     color: #b5b5b5;
     font-size: 35px;
     align-content: center;
@@ -116,7 +117,9 @@ color: rgb(167, 6, 179);
 }
 #page-dots-icon {
     padding: 20px 0px 20px 0px;
-    margin-left: -45px;
+    margin-left: -35px;
+    cursor: pointer;
+    padding-top: 45px;
 }
 #play-heart-dots {
     padding-left: 30px;
