@@ -470,7 +470,7 @@ body > footer > div > div > div:nth-child(1) > div > div:nth-child(1) {
 
 /* hovering */
 .card:hover {
-    box-shadow: 5px 10px 10px 5px rgb(175, 173, 173);
+    box-shadow: 1px 3px 10px 5px rgb(175 173 173);
 }
 .green-play-img {
     height: 50px;

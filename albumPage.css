@@ -107,8 +107,11 @@ body {
     cursor: pointer;
 }
 .bi-heart:hover{
-color: rgb(167, 6, 179);
+color: #16f765;
 
+}
+.bi-three-dots:hover {
+    color: #16f765
 }
 #page-heart-icon {
     padding-top: 20px;

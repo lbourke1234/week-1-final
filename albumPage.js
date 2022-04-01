@@ -13,4 +13,22 @@ let showPauseButton = (event) => {
     } 
    }
 
-   
+   function addEventToHeart() {
+    let heartNode = document.querySelector('#heart-icon-1')
+     heartNode.addEventListener('click', favouriteSong)
+   }
+   addEventToHeart() 
+
+   function favouriteSong() {
+     console.log("hello")
+     let heartNode = document.querySelector('#heart-icon-1')
+   if (heartNode.classList.value === "bi bi-heart"){
+      heartNode.classList.value = "bi bi-heart-fill"; 
+    } else {
+      heartNode.classList.value = "bi bi-heart";
+    } 
+   }
+
+
+
+   /*     document.querySelector('#page-heart-icon').classList.toggle('solid-heart-icon') */
