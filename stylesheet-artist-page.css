@@ -113,6 +113,7 @@ cursor: pointer;
 }
 
 
+/* This is the big Play Button / Pauyse Button functionality */
 .bi-play-circle-fill {
     color: #1ed760;
     font-size: 4em !important;
@@ -121,7 +122,12 @@ cursor: pointer;
 
 
 .pause-button {
-    opacity: 0;
+    opacity: 1;
+    color: #1ed760;
+    font-size: 4em !important;
+    cursor: pointer;
+ 
+
 }
 
 .pause-button-showing {
@@ -137,6 +143,8 @@ cursor: pointer;
 .play-button-hide { 
     visibility: hidden;
 }
+
+/* END | Big Play Button / Pauyse Button functionality */
 
 
 
@@ -170,6 +178,10 @@ cursor: pointer;
     opacity: 0;
 }
 
+.heart-table-hidden {
+    visibility: hidden;
+}
+
 
 .table-cover-picture {
     max-height: 50px;
@@ -193,9 +205,16 @@ td:hover .heart-table {
     opacity: 1;
 }
 
+.bi-heart:hover { 
+    color: rgb(51, 197, 51) !important;
+    font-weight: 900;
+
+}
+
 tr:hover .heart-table {
+    font-size: 1em;
     opacity: 1;
-    color: #1ed760;
+    color: white;
     animation: fadeIn 0.5s;
 }
 
@@ -203,6 +222,8 @@ tr:hover .heart-table {
     0% {opacity:0;}
     100% {opacity:1;}
   }
+
+  
    
 /*   This is the popup function for the heart  */
 
@@ -220,11 +241,11 @@ tr:hover .heart-table {
   .popup .popuptext {
     visibility: hidden;
     width: 160px;
-    background-color: #555;
+    background-color: rgb(36, 69, 254);
     color: #fff;
     text-align: center;
     border-radius: 6px;
-    padding: 8px 0;
+    padding: 8px 8px;
     position: absolute;
     z-index: 1;
     bottom: 125%;
@@ -247,44 +268,39 @@ tr:hover .heart-table {
   /* Toggle this class - hide and show the popup */
   .popup .show {
     visibility: visible;
-    -webkit-animation: fadeIn 1s;
-    -webkit-animation: fadeOut 1s;
-    animation: fadeIn 1s;
-    animation: fadeOut 1s;
+/*     -webkit-animation: fadeIn 1s; */
+    -webkit-animation: fadeOut 5s;
+/*     animation: fadeIn 1s; */
+    animation: fadeOut ease-out 5s;
   }
   
   /* Add animation (fade in the popup) */
-  @-webkit-keyframes fadeIn {
-    from {opacity: 0;} 
-    to {opacity: 1;}
-  }
-  
-  @keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity: 1;}
-  }
+ 
   /* Fadeout  */
   @-webkit-keyframes fadeOut {
-    from {opacity: 1;} 
-    to {opacity: 0;}
+    100% {opacity: 1;} 
+    70% {opacity: 0;}
   }
   
   @keyframes fadeOut {
-    from {opacity: 1;}
-    to {opacity: 0;}
+    100% {opacity: 1;}
+    70% {opacity: 0;}
   }
 
 
+  .heart-filled {
+      display: none;
+  }
+
+  .heart-full-showing {
+      opacity: 1
+  }
+
   /* END: Popup function for the heart. */
-
-
-
-
 
 .soundwave-icon {
     vertical-align: middle;
     color: #1ed760;
-
 }
 
 .table thead th {
@@ -296,12 +312,10 @@ tr:hover .heart-table {
 }
 
  .see-more-text {
-       font-size: 0.8em;
+    font-size: 0.8em;
     font-weight: 500;
-} 
-
-
-
+    cursor: pointer;
+}
 
 /* Wrapper styling */
 
