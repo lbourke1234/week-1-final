@@ -39,37 +39,39 @@
                         <button class="google-btn" type="submit"> <i class="bi bi-google"></i> CONTINUE WITH
                             GOOGLE</button>
                         <hr class="hr-text" data-content="OR">
-                        <form class="login" name="loginForm" onsubmit="validateSignupForm()" method="POST>
+                        <form class="register" name="signUpForm" onsubmit="validateSignupForm(event)">
                             <div class=" input-group mt-2">
-                            <input type="text" class="form-control" placeholder="Full Name" id="signName">
+                                <input type="text" class="form-control" placeholder="Full Name" id="signName">
 
-                            <div class="input-group mt-2">
-                                <input type="email" class="form-control" placeholder="email" id="signEmail">
-                                <div class="input-group-append">
-                                    <span class="input-group-text"><i class="bi bi-envelope-check"></i></span>
+                                <div class="input-group mt-2">
+                                    <input type="email" class="form-control" placeholder="email" id="signEmail">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text"><i class="bi bi-envelope-check"></i></span>
+                                    </div>
                                 </div>
-                            </div>
 
-                            <div class="input-group mt-2">
-                                <input type="password" class="form-control" placeholder="password" id="signPassword">
-                            </div>
-                            <div class="input-group mt-2">
-                                <input type="password" class="form-control" placeholder="re-enter password"
-                                    id="passwordConfirm">
-                            </div>
-                            <div class="input-group mt-2">
-                                <input type="number" class="form-control" placeholder="Phone">
-                            </div>
-                            <div class="mt-3">
-                                <button class="google-btn" type="submit"> Sign Up for Spotify</button>
-                            </div>
-                            <hr>
-                            <p class="footer-text">If you click "Log In with facebook" and not a spotify user, you will
-                                be
-                                registered
-                                and you agree to spotify's <span class="green-text">Terms & conditions</span> and <span
-                                    class="green-text">Privacy Policy</span>
-                            </p>
+                                <div class="input-group mt-2">
+                                    <input type="password" class="form-control" placeholder="password"
+                                        id="signPassword">
+                                </div>
+                                <div class="input-group mt-2">
+                                    <input type="password" class="form-control" placeholder="re-enter password"
+                                        id="passwordConfirm">
+                                </div>
+                                <div class="input-group mt-2">
+                                    <input type="number" class="form-control" placeholder="Phone">
+                                </div>
+                                <div class="mt-3">
+                                    <button class="google-btn" type="submit"> Sign Up for Spotify </button>
+                                </div>
+                                <hr>
+                                <p class="footer-text">If you click "Log In with facebook" and not a spotify user, you
+                                    will
+                                    be
+                                    registered
+                                    and you agree to spotify's <span class="green-text">Terms & conditions</span> and
+                                    <span class="green-text">Privacy Policy</span>
+                                </p>
                         </form>
                         <p class="text-center mt-2">Already Have an Account?</p>
                         <button class="google-btn" type="submit"><a href="./login.html">LOG IN TO SPOTIFY</a>
