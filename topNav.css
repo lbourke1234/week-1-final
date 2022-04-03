@@ -1,0 +1,175 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+
+.navbar-col {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+.navbar-btn {
+    border-radius: 50px;
+    background: rgb(2, 2, 2);
+    border-color: rgb(2, 2, 2);
+}
+
+.arrows {
+    position: absolute;
+    top: 0;
+    padding-top: 15px;
+    padding-left: 15px;
+}
+
+.arrow2,
+.arrow1 {
+    background-color: rgb(59, 59, 59);
+    border-radius: 50%;
+    cursor: pointer;
+    padding-right: 3px;
+    padding-left: 3px;
+}
+
+.arrow2 {
+    margin-left: 0.6em;
+}
+
+.profile-picture-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-right: 15px;
+    padding-top: 15px;
+    cursor: pointer;
+}
+
+.profile-picture-dropdown {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding-right: 0.4em;
+    padding-left: 0.1em;
+    align-items: center;
+    border-radius: 23px;
+    font-size: 0.9em;
+}
+
+.profile-picture-top-bar {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+body
+    > div
+    > div.all-except-sidebar
+    > div:nth-child(1)
+    > div
+    > div.navbar-col.profile-picture-button
+    > div
+    > div
+    > span {
+    font-size: 0.7em;
+    padding-left: 0.9em;
+    font-weight: 700;
+}
+
+body
+    > div
+    > div.all-except-sidebar
+    > div:nth-child(1)
+    > div
+    > div.navbar-col.profile-picture-button
+    > div
+    > div
+    > i {
+    font-size: 0.6em;
+}
+
+/*-----------------new changes -----------------*/
+.navbar-col {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+.navbar-btn {
+    border-radius: 50px;
+    background: rgb(2, 2, 2);
+    border-color: rgb(2, 2, 2);
+}
+
+.arrows {
+    position: fixed;
+    top: 0;
+    padding-top: 15px;
+    padding-left: 15px;
+}
+
+.arrow2,
+.arrow1 {
+    background-color: rgba(59, 59, 59, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 5px;
+    color: white;
+    /* opacity: 0.5; */
+}
+
+.arrow2 {
+    margin-left: 0.6em;
+}
+
+.profile-picture-button {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding-right: 15px;
+    padding-top: 15px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.profile-picture-dropdown {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding-right: 0.4em;
+    padding-left: 0.1em;
+    align-items: center;
+    border-radius: 23px;
+    font-size: 0.9em;
+    font-size: 1.3em;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+}
+
+.profile-picture-top-bar {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+body
+    > div
+    > div.all-except-sidebar
+    > div:nth-child(1)
+    > div
+    > div.navbar-col.profile-picture-button
+    > div
+    > div
+    > span {
+    font-size: 0.7em;
+    padding-left: 0.9em;
+    font-weight: 700;
+}
+
+body
+    > div
+    > div.all-except-sidebar
+    > div:nth-child(1)
+    > div
+    > div.navbar-col.profile-picture-button
+    > div
+    > div
+    > i {
+    font-size: 0.6em;
+}

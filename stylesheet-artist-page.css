@@ -1,0 +1,703 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+
+
+::-webkit-scrollbar {
+    width: .2vw;
+    z-index: 6;
+}
+::-webkit-scrollbar-thumb {
+    background: rgba(170, 170, 170, 0.708);
+    height: 1rem;
+    z-index: 6;
+}
+::-webkit-scrollbar-track {
+    background-color: rgba(255, 255, 255, 0);
+    height: 80vh;
+    z-index: 6;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(123, 123, 123, 0.871);
+    z-index: 6;
+}
+
+h1 {
+        color: white;
+}
+
+.p-tags-different {
+    color:   white;
+}
+
+h1 {
+    font-weight: 900 !important;
+    font-size: 3em !important;
+}
+
+
+h2 { 
+    color: white;
+}
+
+tr {
+    color: rgb(201, 194, 194);
+}
+
+ th {
+    color: rgb(201, 194, 194);
+    font-weight: normal;
+}
+
+.top-navbar {
+    position: fixed; 
+    z-index: 1;
+}
+
+
+
+
+.monthly-listeners-text {
+    font-size: 1em;
+    padding-left: 0;
+}
+
+.jumbotron {
+        background-image: url(https://whiplash.net/imagens_promo/queen_bohemian.jpg);
+        min-height: 100px;
+        margin-bottom: 0;
+        padding-right: 0;
+        padding-left: 0;
+        border-radius: 0rem;
+
+    }
+
+  @media (min-width: 576px) { 
+    .jumbotron {
+    padding-bottom: 2rem; 
+ }
+ 
+
+    .container-top-with-nav {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+
+.inner-container-jumbotron {
+   padding-top: 150px;
+   padding-left: 30px;
+}
+
+.verified-logo {
+    background-color: blue;
+    
+}
+
+.bi-caret-down-fill {
+    color: white;
+}
+
+.bi-patch-check-fill {
+    color: blue;
+}
+
+
+/* This it the container with the play/stop button as well as the Table */
+.play-stop-and-table-container {
+    background-color: #20130E;
+    background: linear-gradient(rgb(53, 51, 51), black);    
+}
+
+/* END: This it the container with the play/stop button as well as the Table */
+
+
+.play-follow-buttons {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+
+}
+
+.follow-text {
+    font-size: 0.8em;
+    font-weight: 500;
+    border: 1px solid rgb(93, 94, 95);
+    margin: 0;    
+padding-left: 0.6em;
+padding-right: 0.6em;
+padding-top: 0.2em;
+padding-bottom: 0.2em;
+cursor: pointer;
+}
+
+
+/* This is the big Play Button / Pauyse Button functionality */
+.bi-play-circle-fill {
+    color: #1ed760;
+    font-size: 4em !important;
+    cursor: pointer;
+}
+
+
+.pause-button {
+    opacity: 1;
+    color: #1ed760;
+    font-size: 4em !important;
+    cursor: pointer;
+ 
+
+}
+
+.pause-button-showing {
+    opacity: 1;
+    color: #1ed760;
+    font-size: 4em !important;
+    cursor: pointer;
+    margin-left: -64px;
+    padding-right: 20px;
+
+}
+
+.play-button-hide { 
+    visibility: hidden;
+}
+
+/* END | Big Play Button / Pauyse Button functionality */
+
+
+
+.bi-three-dots { 
+color: rgb(93, 94, 95);
+cursor: pointer;
+}
+
+
+.table-playlist {
+ height: 1000px !important;
+}
+
+.album-cover-picture {
+    max-height: 80px;
+}
+
+.artist-pick {
+    display: flex;
+    flex-direction: column;
+}
+
+.inner-container-artist-pick {
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+}
+
+/* This is the heart within the table  */
+.heart-table {
+    opacity: 0;
+}
+
+.heart-table-hidden {
+    visibility: hidden;
+}
+
+
+.table-cover-picture {
+    max-height: 50px;
+    cursor: pointer;
+}
+
+.table td, .table th {
+    vertical-align: baseline;
+    cursor: pointer;
+}
+
+td:hover, tr:hover, th:hover {
+    background-color: rgb(65, 63, 63);
+    color: white;
+}
+
+
+/* The heart and the hovering  */
+
+td:hover .heart-table {
+    opacity: 1;
+}
+
+.bi-heart:hover { 
+    color: rgb(51, 197, 51) !important;
+    font-weight: 900;
+
+}
+
+tr:hover .heart-table {
+    font-size: 1em;
+    opacity: 1;
+    color: white;
+    animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+
+  
+   
+/*   This is the popup function for the heart  */
+
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* The actual popup */
+  .popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: rgb(36, 69, 254);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 8px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+  }
+  
+  /* Popup arrow */
+  .popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  /* Toggle this class - hide and show the popup */
+  .popup .show {
+    visibility: visible;
+/*     -webkit-animation: fadeIn 1s; */
+    -webkit-animation: fadeOut 5s;
+/*     animation: fadeIn 1s; */
+    animation: fadeOut ease-out 5s;
+  }
+  
+  /* Add animation (fade in the popup) */
+ 
+  /* Fadeout  */
+  @-webkit-keyframes fadeOut {
+    100% {opacity: 1;} 
+    70% {opacity: 0;}
+  }
+  
+  @keyframes fadeOut {
+    100% {opacity: 1;}
+    70% {opacity: 0;}
+  }
+
+
+  .heart-filled {
+      display: none;
+  }
+
+  .heart-full-showing {
+      opacity: 1
+  }
+
+  /* END: Popup function for the heart. */
+
+.soundwave-icon {
+    vertical-align: middle;
+    color: #1ed760;
+}
+
+.table thead th {
+    vertical-align: middle;
+}
+
+.table-row {
+    padding-left: 15px !important;
+}
+
+ .see-more-text {
+    font-size: 0.8em;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* Wrapper styling */
+
+.wrapper {
+    display:flex;
+}
+
+/* Sidebar  */
+
+.top-sidebar {
+    position: fixed;
+    width: 266px;
+}
+
+.sidebar {
+    background: #000;
+    top: 0;
+    left: 0;
+    color: #b3b3b3;
+    padding: 20px 0; 
+    min-width: 300px;
+    max-width: 300px;;
+    padding-right: 15px;
+    padding-left: 30px;
+    cursor: pointer;
+    border-right: solid 4px black;
+    border-bottom: solid 222px rgb(24, 24, 24);   
+}
+
+body > div > div.sidebar.pl-3 > div.d-flex.flex-column > div > span {
+    font-size: 0.875rem;
+    line-height: 1rem;
+    font-family: Helvetica,Arial,sans-serif;
+    font-weight: 600
+}
+
+body > div > div.sidebar > div.d-flex.flex-column > div:hover {
+    background-color: rgb(65, 63, 63);
+    color: white;   
+}
+
+   body > div > div.sidebar.pl-3 > div.p-lists > p, body > div > div.sidebar.pl-3 > div.p-lists > div > p {
+    color: #b3b3b3;
+    cursor: pointer;
+  }
+ 
+ 
+
+   body > div > div.sidebar.pl-3 > div.p-lists > div:hover, body > div > div.sidebar.pl-3 > div.p-lists > div > p:hover {
+    color: white;
+  } 
+ 
+  body > div > div.sidebar.pl-3 > div.p-lists > p:hover {
+    color: white;
+  }
+ 
+
+ hr {
+    background-color: rgb(93, 94, 95);
+ } 
+
+  .create .bi {
+    background-color: rgb(148, 150, 151);
+    color: #000;
+    padding-right: 4px;
+    padding-left: 4px;
+    font-size: 1em;
+  }
+  .heart .bi {
+    color: #fff;
+    background: rgb(82, 144, 222);
+    background: linear-gradient(
+      180deg,
+      rgb(97, 20, 168) 20%,
+      rgb(56, 129, 197) 46%,
+      rgb(103, 63, 136) 100%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    padding: 4px 6px;
+    font-size: 10px;
+  }
+   .p-lists {
+    font-size: 0.875rem;
+    color: #b3b3b3;
+    line-height: 1.25rem;
+    text-transform: none;
+    letter-spacing: normal;
+    font-family: Helvetica,Arial,sans-serif;
+    overflow-y: scroll;
+    scrollbar-width: 300px;
+    height: 600px;
+} 
+.p-lists p:hover {
+    color: white;
+}
+.sidebar .flex-column > div:hover {
+    background: rgb(49, 41, 41);
+}
+
+  .bi {
+      font-size: 1.3em;
+  }
+
+/* End Sidebar  */
+
+  .all-except-sidebar {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 2;
+  }
+
+/* Navbar  */
+
+.navbar-col {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+.navbar-btn {
+    border-radius: 50px;
+    background:rgb(2, 2, 2);
+    border-color:rgb(2, 2, 2);
+}
+
+.arrows {
+    position: fixed;
+    top: 0;
+    padding-top: 15px;
+    padding-left: 15px;    
+}
+
+.arrow2, .arrow1 {
+    background-color: rgba(59, 59, 59, 0.5);
+    border-radius: 50%;
+    cursor: pointer;    
+    padding: 5px;
+    color: white;
+    /* opacity: 0.5; */
+}
+
+.arrow2 {
+    margin-left: 0.6em;
+}
+
+.profile-picture-button { 
+position: fixed;
+top: 0;
+right: 0;
+padding-right: 15px;
+padding-top: 15px;
+cursor: pointer;
+opacity: 0.8;
+}
+
+.profile-picture-dropdown {
+    background-color: rgba(0, 0, 0, .7);
+    padding-right: 0.4em;
+    padding-left: 0.1em;
+    align-items: center;
+    border-radius: 23px;
+    font-size: 0.9em;
+    font-size: 1.3em;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+}
+
+.profile-picture-top-bar {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+body > div > div.all-except-sidebar > div:nth-child(1) > div > div.navbar-col.profile-picture-button > div > div > span {
+    font-size: 0.7em;
+    padding-left: 0.9em;
+    font-weight: 700;
+}
+
+
+body > div > div.all-except-sidebar > div:nth-child(1) > div > div.navbar-col.profile-picture-button > div > div > i {
+font-size: 0.6em;
+} 
+
+/* End Navbar  */
+
+
+
+/* New Footer CSS (leon) 
+ */
+
+
+footer {
+    background: #181818;
+    position:fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: white;
+    margin-top: -20px;
+}
+footer img {
+    height: 100px;
+    width: 100px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    padding: 6px;
+}
+.p-song-name {
+    font-size: .9em;
+    margin-top: 30px;
+}
+.p-artist-name {
+    font-size: .7em;
+    margin-top: -10px;
+    margin-left: 40px;
+}
+.main-progress {
+    height: 20%;
+    width: 100%;
+    cursor: grab;
+}
+.bi-play-circle {
+    font-size: 1.2em;
+}
+.volume-progress {
+    height: 5%;
+    width: 25%;
+    cursor: pointer;
+
+}
+.bi-shuffle {
+    font-size: .8em;
+    cursor: pointer;
+}
+.bi-skip-backward {
+    font-size: .8em;
+    cursor: pointer;
+
+}
+.bi-skip-forward {
+    font-size: .8em;
+    cursor: pointer;
+
+}
+.bi-arrow-repeat {
+    font-size: .8em;
+    cursor: pointer;
+
+}
+.bi-heart {
+    font-size: 1.5em;
+    cursor: pointer;
+
+}
+.bi-image {
+    font-size: 1.5em;
+    cursor: pointer;
+
+}
+.bi-list {
+    font-size: 1.5em;
+    cursor: pointer;
+
+}
+.bi-tv {
+    font-size: 1.5em;
+    cursor: pointer;
+
+}
+.bi-volume-up {
+    font-size: 1.5em;
+    cursor: pointer;
+
+}
+.footer {
+    padding-left: 28px;
+    padding-right: 28px;
+    margin-bottom: -16px;
+    margin-top: -20px;
+}
+body > footer > div > div > div:nth-child(2) {
+    padding-top: 20px;
+}
+body > footer > div > div > div:nth-child(1) > div > div:nth-child(1) {
+    padding-left: 0px;
+    margin-top: 2px;
+    margin-bottom: 12px;
+    margin-right: -40px;
+}
+.progress-row {
+    padding-bottom: 12px;
+}
+footer {
+    background: rgb(59, 59, 59);
+    position:fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: white;
+}
+footer img {
+    height: 70px;
+    width: 70px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    padding: 6px;
+    padding-top: 12px;
+    padding-bottom: 2px;
+}
+.p-song-name {
+    font-size: .9em;
+    margin-top: 30px;
+}
+.p-artist-name {
+    font-size: .7em;
+    margin-top: -10px;
+}
+.main-progress {
+    height: 20%;
+    width: 100%;
+}
+.bi-play-circle {
+    font-size: 2em;
+    margin-bottom: -8px;
+
+}
+.volume-progress {
+    height: 5%;
+    width: 25%;
+}
+.bi-shuffle {
+    font-size: 1em;
+    margin-bottom: -10px;
+}
+.bi-skip-backward {
+    font-size: 1em;
+    margin-bottom: -10px;
+    margin-left: 27px;
+}
+.bi-skip-forward {
+    font-size: 1em;
+    margin-bottom: -10px;
+    margin-right: 27px;
+}
+.bi-arrow-repeat {
+    font-size: 1em;
+    margin-bottom: -10px;
+
+}
+.bi-heart {
+    font-size: 1em;
+}
+.bi-image {
+    font-size: 1em;
+}
+.bi-list {
+    font-size: 1.5em;
+}
+.bi-tv {
+    font-size: 1.5em;
+}
+.bi-volume-up {
+    font-size: 1.5em;
+}

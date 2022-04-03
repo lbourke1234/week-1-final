@@ -1,0 +1,84 @@
+footer {
+    background: rgb(59, 59, 59);
+
+    position: fixed;
+
+
+
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: white;
+}
+footer img {
+    height: 70px;
+    width: 70px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    padding: 6px;
+    padding-top: 12px;
+    padding-bottom: 2px;
+}
+.p-song-name {
+
+    font-size: 0.9em;
+    margin-top: 30px;
+}
+.p-artist-name {
+    font-size: 0.7em;
+
+    font-size: .9em;
+    margin-top: 30px;
+}
+.p-artist-name {
+    font-size: .7em;
+    margin-left: 40px;
+    margin-top: -10px;
+}
+.main-progress {
+    height: 20%;
+    width: 100%;
+}
+.bi-play-circle {
+    font-size: 2em;
+    margin-bottom: -8px;
+
+}
+.volume-progress {
+    height: 5%;
+    width: 25%;
+}
+.bi-shuffle {
+    font-size: 1em;
+    margin-bottom: -10px;
+}
+.bi-skip-backward {
+    font-size: 1em;
+    margin-bottom: -10px;
+    margin-left: 27px;
+}
+.bi-skip-forward {
+    font-size: 1em;
+    margin-bottom: -10px;
+    margin-right: 27px;
+}
+.bi-arrow-repeat {
+    font-size: 1em;
+    margin-bottom: -10px;
+
+}
+.bi-heart {
+    font-size: 1em;
+}
+.bi-image {
+    font-size: 1em;
+}
+.bi-list {
+    font-size: 1.5em;
+}
+.bi-tv {
+    font-size: 1.5em;
+}
+.bi-volume-up {
+    font-size: 1.5em;
+}

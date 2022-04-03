@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
+
+    <title>Artist page</title>
+    <link rel="stylesheet" href="stylesheet-artist-page.css" />
+  </head>
+  <body>
+    <!-- Wrapper  -->
+
+    <!-- Wrapper -->
+    <div class="wrapper d-flex">
+      <!-- Sidebar -->
+
+      <div class="sidebar">
+        <div class="top-sidebar">
+          <img src="./img/Spotify_Logo_CMYK_White.png" height="38" alt="" />
+
+          <div class="d-flex flex-column">
+            <div class="mt-4">
+              <i class="bi bi-house-fill mr-3"></i> <span>Home</span>
+            </div>
+            <div class="mt-2">
+              <i class="bi bi-search mr-3"></i> <span>Search</span>
+            </div>
+            <div class="mt-2">
+              <i class="bi bi-collection-fill mr-3"></i> <span>Library</span>
+            </div>
+            <div class="mt-5 create">
+              <i class="bi bi-plus-lg mr-3"></i> <span>Create Playlist</span>
+            </div>
+            <div class="mt-3 heart">
+              <i class="bi bi-heart-fill mr-3"></i> <span>Liked Songs</span>
+            </div>
+          </div>
+          <hr />
+
+          <!--         <div class="list-with-scroll-bar"> -->
+          <div class="p-lists">
+            <p>Funky Heavy Blussy</p>
+            <p>Your top songs 2020</p>
+            <p>In love with you- Erylah B...</p>
+            <p>This is Rod Stewart</p>
+            <p>FRANCHISE Ft Young Thug...</p>
+            <p>Your top songs 2019</p>
+            <p>Jazz Classics</p>
+            <p>Your Top Songs 2018</p>
+            <p>New Playlist</p>
+            <p>Metal Ballads</p>
+            <p>This is Opeth</p>
+            <p>Funky Heavy Blussy</p>
+            <p>Your top songs 2020</p>
+            <p>In love with you- Erylah B...</p>
+            <p>This is Rod Stewart</p>
+            <p>FRANCHISE Ft Young Thug...</p>
+            <p>Your top songs 2019</p>
+            <p>Jazz Classics</p>
+            <p>Your Top Songs 2018</p>
+            <p>New Playlist</p>
+            <p>Metal Ballads</p>
+            <p>This is Opeth</p>
+            <div class="d-flex justify-content-between">
+              <p>Jack 30th Birthday</p>
+              <i class="bi bi-people"></i>
+            </div>
+            <div class="d-flex justify-content-between">
+              <p>Jack 30th Birthday Party 2</p>
+              <i class="bi bi-people"></i>
+            </div>
+
+            <p>Jun19</p>
+            <p>This is Joe Banana</p>
+            <p><i class="bi bi-arrow-down-circle-fill"></i> Install App</p>
+          </div>
+          <!-- </div> -->
+        </div>
+      </div>
+
+      <!-- This container contains everything except the Sidebar and the Footer -->
+      <div class="all-except-sidebar">
+        <!-- Jumbotron and Nav container start -->
+        <div class="container-fluid">
+          <!-- Jumbotron -->
+          <div class="container-fluid container-top-with-nav">
+            <div class="row">
+              <div class="jumbotron col-12">
+                <div class="inner-container-jumbotron">
+                  <p class="p-tags-different">
+                    <i class="bi bi-patch-check-fill"></i>
+                    Verified Artist
+                  </p>
+                  <h1 class="display-4">Queen</h1>
+                  <p class="lead monthly-listeners-text p-tags-different">
+                    37,120,733 monthly listeners
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- The Nav bar -->
+
+            <div class="arrows">
+              <i class="arrow1 bi bi-chevron-left"></i>
+              <i class="arrow2 bi bi-chevron-right"></i>
+            </div>
+            <div class="navbar-col profile-picture-button">
+              <div class="">
+                <div class="profile-picture-dropdown d-flex">
+                  <!--                                 <i class="bi bi-person-circle pr-3 text-white"></i>
+                    -->
+                  <img
+                    src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cmFuZG9tJTIwcGVvcGxlfGVufDB8fDB8fA%3D%3D&w=1000&q=80"
+                    alt=""
+                    class="profile-picture-top-bar"
+                  />
+                  <span class="pr-3 text-white">Diego Ziba Ba..</span>
+                  <i class="bi bi-caret-down-fill"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- The play/start and the table in one div -->
+        <div class="play-stop-and-table-container">
+          <!--     The "Navigation" section with the Play/Stop button  -->
+          <div class="container-fluid container-play-stop-button">
+            <ul class="nav">
+              <div class="play-follow-buttons">
+                <i
+                  class="bi bi-play-circle-fill big-play-button"
+                  id="play-pause-button-id"
+                  onclick="showPauseButton()"
+                ></i>
+                <p class="follow-text ml-3 p-tags-different">FOLLOW</p>
+                <i class="bi bi-three-dots ml-3"></i>
+              </div>
+            </ul>
+          </div>
+          <!--     END: The "Navigation" section with the Play/Stop button  -->
+
+          <!-- Table section -->
+          <div class="container-fluid table-container">
+            <div class="row table-row table-playlist">
+              <div class="col-9 heading-and-table">
+                <div class="table-headings d-flex">
+                  <h2>Popular</h2>
+                </div>
+                <table class="table table-borderless">
+                  <thead>
+                    <tr>
+                      <th scope="col" class="soundwave-icon">
+                        <i class="bi bi-soundwave"></i>
+                      </th>
+                      <th scope="col">
+                        <img
+                          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReSITMMEH8IfEqFlTHfCd7_1_O39Egfr7p6w&usqp=CAU"
+                          alt="Album cover"
+                          class="table-cover-picture mr-2"
+                        />
+                        <span>Another One Bites The Dust</span>
+                      </th>
+                      <th scope="col">103,112,002</th>
+                      <th scope="col">3,34</th>
+                      <th scope="col">
+                        <div class="popup" onclick="addSongToLikedAlbum()">
+                          <i class="bi bi-heart heart-table">
+                            <i class="bi bi-suit-heart-fill heart-filled"></i>
+                            <span class="popuptext myPopup">
+                              Added to your Liked Songs
+                            </span>
+                          </i>
+                        </div>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr onclick="redirectToAlbumPage(event)">
+                      <th scope="row">1</th>
+                      <td>
+                        <img
+                          src="https://upload.wikimedia.org/wikipedia/en/f/f4/Queen_Sheer_Heart_Attack.png"
+                          alt="Album cover"
+                          class="table-cover-picture mr-2"
+                        />
+                        <span>Bohemian Rhapsody</span>
+                      </td>
+                      <td>149,112,000</td>
+                      <td>6:23</td>
+                      <td>
+                        <div
+                          class="popup"
+                          onclick="addSongToLikedAlbum()"
+                          onclick="heartFilledFunction()"
+                        >
+                          <i class="bi bi-heart heart-table">
+                            <i class="bi bi-suit-heart-fill heart-filled"></i>
+                            <span class="popuptext myPopup">
+                              Added to your Liked Songs
+                            </span>
+                          </i>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>
+                        <img
+                          src="http://ocovildovinil.pt/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/q/u/queen_1sheer_heart_attack.cl..jpg"
+                          alt="Album cover"
+                          class="table-cover-picture mr-2"
+                        />
+                        <span>Don't Stop Me Now - Remastered 2011</span>
+                      </td>
+                      <td>103,112,002</td>
+                      <td>5:45</td>
+                      <td>
+                        <div
+                          class="popup"
+                          onclick="addSongToLikedAlbum()"
+                          onclick="heartFilledFunction()"
+                        >
+                          <i class="bi bi-heart heart-table">
+                            <i class="bi bi-suit-heart-fill heart-filled"></i>
+                            <span class="popuptext myPopup">
+                              Added to your Liked Songs
+                            </span>
+                          </i>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>
+                        <img
+                          src="https://images.genius.com/4a04f1641c72d314c799e35663e3ba8e.600x600x1.jpg"
+                          alt="Album cover"
+                          class="table-cover-picture mr-2"
+                        />
+                        <span>Under Preassure</span>
+                      </td>
+                      <td>103,112,002</td>
+                      <td>1:36</td>
+                      <td>
+                        <div
+                          class="popup"
+                          onclick="addSongToLikedAlbum()"
+                          onclick="heartFilledFunction()"
+                        >
+                          <i class="bi bi-heart heart-table">
+                            <i class="bi bi-suit-heart-fill heart-filled"></i>
+                            <span class="popuptext myPopup">
+                              Added to your Liked Songs
+                            </span>
+                          </i>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">4</th>
+                      <td>
+                        <img
+                          src="https://www.theaudiodb.com/images/media/album/thumbback/dl9x741602709309.jpg"
+                          alt="Album cover"
+                          class="table-cover-picture mr-2"
+                        />
+                        <span>We Will Rock You - Remastered</span>
+                      </td>
+                      <td>103,112,002</td>
+                      <td>2:40</td>
+                      <td>
+                        <div
+                          class="popup"
+                          onclick="addSongToLikedAlbum()"
+                          onclick="heartFilledFunction()"
+                        >
+                          <i class="bi bi-heart heart-table">
+                            <i class="bi bi-suit-heart-fill heart-filled"></i>
+                            <span class="popuptext myPopup">
+                              Added to your Liked Songs
+                            </span>
+                          </i>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p class="see-more-text p-tags-different">See more</p>
+              </div>
+              <div class="artist-pick col-3">
+                <div class="artist-pick-header">
+                  <h2>Artist pick</h2>
+                </div>
+                <div class="inner-container-artist-pick">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/en/3/39/Queen_The_Works.png"
+                    alt="Album cover"
+                    class="album-cover-picture mr-2"
+                  />
+                  <div class="posted-by-icon-and-text">
+                    <i class="bi bi-person-circle pr-1 text-white"></i>
+                    <span class="pr-3 text-white">Posted by Queen</span>
+                    <p class="mb-0 mt-2 p-tags-different">
+                      <strong>Queen Best Of</strong>
+                    </p>
+                    <p class="mt-0 pt-0 p-tags-different">Playlist</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- END : Table section -->
+      </div>
+    </div>
+    <!-- </div> -->
+
+    <footer>
+      <div class="container-fluid footer">
+        <div class="row">
+          <div class="col-4 d-flex align-items-center">
+            <div class="row">
+              <div class="col-2">
+                <img src="https://picsum.photos/200/300" alt="" />
+              </div>
+              <div class="col-8">
+                <div class="row d-flex flex-column">
+                  <div class="col-12">
+                    <p class="pl-4 p-song-name">
+                      Another One Bites The Dust - Remastered 2011
+                    </p>
+                  </div>
+                  <div class="row d-flex flex-column">
+                    <div class="col-12">
+                      <p class="p-artist-name">Queen</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-2 d-flex align-items-center">
+                <i class="bi bi-heart pr-4"></i>
+                <i class="bi bi-image"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="row">
+              <div
+                class="col d-flex justify-content-center mt-1 align-items-center"
+              >
+                <i class="bi bi-shuffle"></i>
+                <i class="bi bi-skip-backward ml-3"></i>
+                <i class="bi bi-play-circle mx-3"></i>
+                <i class="bi bi-skip-forward mr-3"></i>
+                <i class="bi bi-arrow-repeat"></i>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col d-flex align-items-center pb-2">
+                <span>0.12</span>
+                <progress
+                  class="main-progress m-3"
+                  id="progress"
+                  value="0"
+                  min="0"
+                >
+                  <span id="progress-bar"></span>
+                </progress>
+                <span>3.34</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 d-flex justify-content-end align-items-center">
+            <i class="bi bi-list pr-4"></i>
+            <i class="bi bi-tv pr-4"></i>
+            <i class="bi bi-volume-up pr-4"></i>
+            <progress class="volume-progress" id="progress" value="0" min="0">
+              <span id="progress-bar"></span>
+            </progress>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="artist-script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,63 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+
+/*--------------- track list----------------------*/
+.track-decoration{
+    position: relative;
+    cursor: pointer;
+}
+.track-decoration::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #16f765;
+
+
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 250ms ease-in;
+}
+.track-decoration:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+
+
+/*---------------- play and pause -----------------*/
+.pause-icon{
+  opacity: 1;
+  color:  #0cad44;
+  font-size: 4em;
+  cursor: pointer;
+}
+.pause-icon:hover {
+  color: #16f765;
+}
+
+
+/*----------------- Pink Heart -------------------*/
+.solid-heart-icon{
+  opacity: 1;
+  color:  #ad0c92;
+  font-size: 4em;
+  cursor: pointer;
+}
+.solid-heart-icon:hover {
+  color: #e816f7;
+}
+
+#heart-icon-1 {
+  font-size: 2em;
+  cursor: pointer;  
+}
+
+#page-heart-icon {
+  padding-top: 32px;
+}
+
+.bi-heart-fill {
+  color: red;
+}

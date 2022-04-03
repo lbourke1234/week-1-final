@@ -1,0 +1,182 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+ 
+ 
+ /*---------- scroll bar --------------*/
+
+::-webkit-scrollbar {
+    width: 0.2vw;
+    z-index: 6;
+}
+::-webkit-scrollbar-thumb {
+    background: rgba(170, 170, 170, 0.708);
+    height: 1rem;
+    z-index: 6;
+}
+::-webkit-scrollbar-track {
+    background-color: rgba(255, 255, 255, 0);
+    height: 80vh;
+    z-index: 6;
+   
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(123, 123, 123, 0.871);
+    z-index: 6;
+}
+
+/*----------------- gradients -----------------------*/
+.gradient-container1 {
+    width: 100%;
+    height: 50vh;
+    background: rgb(217, 2, 216);
+    background: linear-gradient(
+        45deg,
+        rgba(217, 2, 216, 1) 7%,
+        rgba(116, 39, 167, 1) 38%,
+        rgba(60, 0, 119, 1) 76%
+    );
+}
+.gradient-container2 {
+    width: 100%;
+    height: 100vh;
+    background: rgb(134, 134, 134);
+    background: linear-gradient(
+        180deg,
+        rgba(28, 28, 28, 0.152) 32%,
+        rgba(14, 14, 14, 0.494) 37%,
+        rgba(4, 4, 4, 0.789) 45%,
+        rgba(0, 0, 0, 0.809) 46%,
+        rgba(0, 0, 0, 1.857) 51%,
+        rgba(0, 0, 0, 5.891) 53%,
+        rgba(0, 0, 0, 0.939) 54%,
+        rgb(7, 7, 7) 71%
+    );
+}
+/*----------------- body -----------------------*/
+body {
+    background-color: black; 
+    color: #ececec;
+}
+.container {
+    margin-right: 0px;
+}
+
+/*----------------- hero section -----------------------*/
+
+#album-page-hero {
+    padding-left: 15px;
+    background: rgb(217, 2, 216);
+    background: linear-gradient(
+        45deg,
+        rgba(217, 2, 216, 1) 7%,
+        rgba(116, 39, 167, 1) 38%,
+        rgba(60, 0, 119, 1) 76%
+    );
+}
+
+#hero-img {
+    box-shadow: 1px 3px 18px 1px black;
+    margin: 15px;
+    height: 185px;
+    width: 185px;
+}
+.album-container {
+    padding-top: 60px;
+    padding-bottom: 10px;
+}
+#album-page-hero > div > div.row > div.col-12.col-md-9 {
+    margin-left: -10px;
+}
+#album-page-hero > div > div.row > div.col-12.col-md-9 > div {
+    padding-left: 35px;
+}
+
+.bi-play-circle-fill {
+    color: #20c158;
+    font-size: 4em;
+    cursor: pointer;
+}
+.bi-play-circle-fill:hover {
+    color: #16f765;
+}
+.heart-icon {
+    padding-top: 20px;
+    color: #b5b5b5;
+    font-size: 35px;
+    align-content: center;
+    cursor: pointer;
+}
+.bi-heart:hover{
+color: #16f765;
+
+}
+.bi-three-dots:hover {
+    color: #16f765
+}
+#page-heart-icon {
+    padding-top: 20px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+#page-dots-icon {
+    padding: 20px 0px 20px 0px;
+    margin-left: -35px;
+    cursor: pointer;
+    padding-top: 45px;
+}
+#play-heart-dots {
+    padding-left: 30px;
+}
+
+/*---------------------  #title clock -------------------*/
+.hashtag-title {
+    margin-right: 1.5rem;
+    font-size: 1.2rem;
+}
+#time-icon {
+    margin-left: 0px;
+}
+.clock-icon {
+    padding-left: 0px;
+}
+.hr-page {
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+    margin-right: 30px;
+}
+.track-list-icons {
+    padding-left: 30px;
+}
+
+/*-------------------------- track list -------------------------*/
+.album-track-list {
+    padding-left: 40px;
+}
+.track-num {
+    padding-left: 20px;
+    margin-right: 1.5rem;
+}
+.title-song {
+    padding-left: 25px;
+}
+
+.singer-name {
+    margin-left: 60px;
+    font-size: 14px;
+}
+
+.hashtag-title {
+    margin-left: 20px;
+}
+
+.album-page-album-info img {
+    height: 22px;
+    border-radius: 2rem;
+}
+#midnigth-protocol {
+    margin-left: -9px;
+}
+
+
+
+/*  ------------- scroll bar main  ----------------------------*/

@@ -1,0 +1,107 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+.sidebar {
+    position: sticky;
+    background: #000;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    color: #b3b3b3;
+    padding: 20px 0;
+    min-width: 300px;
+    max-width: 300px;
+    padding-right: 15px;
+    padding-left: 30px;
+    cursor: pointer;
+    border-right: solid 4px black;
+    border-bottom: solid 222px rgb(24, 24, 24);
+}
+
+body > div > div.sidebar.pl-3 > div.d-flex.flex-column > div > span {
+    font-size: 0.875rem;
+    line-height: 1rem;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 600;
+}
+
+body > div > div.sidebar > div.d-flex.flex-column > div:hover {
+    background-color: rgb(65, 63, 63);
+    color: white;
+}
+
+body > div > div.sidebar.pl-3 > div.p-lists > p,
+body > div > div.sidebar.pl-3 > div.p-lists > div > p {
+    color: #b3b3b3;
+    cursor: pointer;
+}
+
+body > div > div.sidebar.pl-3 > div.p-lists > div:hover,
+body > div > div.sidebar.pl-3 > div.p-lists > div > p:hover {
+    color: white;
+}
+
+body > div > div.sidebar.pl-3 > div.p-lists > p:hover {
+    color: white;
+}
+
+.hr-nav {
+    background-color: rgb(244, 244, 244);
+}
+
+.create .bi {
+    background-color: rgb(148, 150, 151);
+    color: #000;
+    padding-right: 4px;
+    padding-left: 4px;
+    font-size: 1em;
+}
+.heart .bi {
+    color: #fff;
+    background: rgb(82, 144, 222);
+    background: linear-gradient(
+        180deg,
+        rgb(97, 20, 168) 20%,
+        rgb(56, 129, 197) 46%,
+        rgb(103, 63, 136) 100%,
+        rgba(255, 255, 255, 0) 100%
+    );
+    padding: 4px 6px;
+    font-size: 10px;
+}
+
+.p-lists {
+    font-size: 0.875rem;
+    color: #b3b3b3;
+    line-height: 1.25rem;
+    text-transform: none;
+    letter-spacing: normal;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 0.875rem;
+    color: #b3b3b3;
+    line-height: 1.25rem;
+    text-transform: none;
+    letter-spacing: normal;
+    font-family: Helvetica, Arial, sans-serif;
+    overflow-y: scroll;
+    scrollbar-width: auto;
+    height: 600px;
+}
+.p-lists p:hover {
+    color: white;
+}
+.sidebar .flex-column > div:hover {
+    background: rgb(49, 41, 41);
+}
+
+.list-with-scroll-bar {
+    overflow-y: scroll;
+}
+*/ .bi {
+    font-size: 1.3em;
+}
+#installApp-sticky {
+    position: fixed;
+    opacity: 0.7;
+    margin-left: 5px;
+    padding-top: 3px;
+    padding-bottom: 5px;
+}

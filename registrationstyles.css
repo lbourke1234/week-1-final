@@ -1,0 +1,123 @@
+.Registration-container {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+hr {
+  border-bottom: 1px solid rgb(217, 218, 220);
+}
+
+.facebook-btn {
+  width: 100%;
+  border: none;
+  border-radius: 30px;
+  color: whitesmoke;
+  padding: 10px 28px;
+  font-weight: 400;
+  font-size: 14px;
+  background-color: rgb(59, 89, 152);
+  margin-bottom: 10px;
+}
+.apple-btn {
+  background-color: #191919;
+  width: 100%;
+  border: none;
+  border-radius: 30px;
+  color: whitesmoke;
+  padding: 10px 28px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+.google-btn {
+  background-color: #fff;
+  width: 100%;
+  border-radius: 30px;
+  border: 2px solid rgb(83, 83, 83);
+  color: rgb(12, 12, 12);
+  padding: 10px 28px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 10px;
+ 
+}
+.google-btn .bi {
+  background: conic-gradient(
+      from -45deg,
+      #ea4335 110deg,
+      #4285f4 90deg 180deg,
+      #34a853 180deg 270deg,
+      #fbbc05 270deg
+    )
+    73% 55%/150% 150% no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+.hr-text {
+  line-height: 1em;
+  position: relative;
+  outline: 0;
+  border: 0;
+  color: black;
+  text-align: center;
+  height: 1.5em;
+  opacity: 0.5;
+}
+.hr-text:before {
+  content: "";
+  background-color: rgb(217, 218, 220);
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  height: 1px;
+}
+.hr-text:after {
+  content: attr(data-content);
+  position: relative;
+  display: inline-block;
+  /* color: black; */
+  padding: 0 0.5em;
+  line-height: 1.5em;
+  color: #181817;
+  background-color: #fcfcfa;
+}
+.input-one {
+  width: 85%;
+}
+.remember .bi {
+  color: #1fdf64;
+}
+.log-btn {
+  background-color: #1fdf64;
+  border-radius: 30px;
+  width: 50%;
+}
+.green-text {
+  color: #399b5d;
+}
+.footer-text {
+  font-size: 10px;
+}
+#errorMsg{
+  color:red;
+  text-align: center;
+  font-size: 18px;
+  padding-bottom: 20px;
+ 
+}
+button a{
+  color: #191919;
+  
+}
+button a:link{
+  text-decoration: none;
+}
+.google-btn:hover{
+ opacity: 0.6;
+ transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  background: linear-gradient(to right, #25e03ea2, #dbf10f);
+}

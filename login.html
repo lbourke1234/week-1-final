@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./loginstyles.css">
+
+    <title>Spotify Login</title>
+</head>
+
+<body>
+    <div class="login-container">
+        <div class="logo-section d-flex justify-content-center my-4">
+            <img src="./img/logo.png" alt="spotify-logo" height="48">
+        </div>
+        <hr>
+
+        <div class="login-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-d-none col-4">
+
+
+                    </div>
+                    <div class="col-4 ">
+                        <div id="errorMsg"></div>
+                        <p class="text-center">To continue, log in to Spotify</p>
+                        <button class="facebook-btn" type="submit"> <i class="bi bi-facebook"></i> CONTINUE WITH
+                            FACEBOOK</button>
+                        <button class="apple-btn" type="submit"> <i class="bi bi-apple"></i> CONTINUE WITH APPLE
+                        </button>
+                        <button class="google-btn" type="submit"> <i class="bi bi-google"></i> CONTINUE WITH
+                            GOOGLE</button>
+                        <hr class="hr-text" data-content="OR">
+                        <form class="login" name="loginForm" onsubmit="validateLoginForm(event)">
+                            <div class="input-group">
+                                <input type="email" class="form-control" placeholder="username or email" id="logEmail">
+                                <div class="input-group-append">
+                                    <span class="input-group-text"><i class="bi bi-envelope-check"></i></span>
+                                </div>
+                            </div>
+                            <div class="input-group mt-2">
+                                <input type="password" class="form-control" placeholder="password" id="logPassword">
+                            </div>
+                            <div class="d-flex justify-content-between align-items-baseline mt-4 ">
+                                <div class="remember">
+                                    <i class="bi bi-check-square-fill"></i><span class="pl-1">Remember Me</span>
+                                </div>
+                                <button type="submit" class="btn log-btn">Log In</button>
+
+                            </div>
+                        </form>
+                        <p class="text-center mt-2 green-text">Forgot your password?</p>
+                        <hr>
+                        <p class="text-center mt-2">Don't have an account?</p>
+                        <button class="google-btn" type="submit"><a href="">SIGN UP FOR
+                                SPOTIFY</a></button>
+                        <hr>
+                        <p class="footer-text">If you click "Log In with facebook" and not a spotify user, you will be
+                            registered
+                            and you agree to spotify's <span class="green-text">Terms & conditions</span> and <span
+                                class="green-text">Privacy Policy</span>
+                        </p>
+                    </div>
+                    <div class="col-sm-d-none col-4 ">
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+
+    <script src="./login.js"></script>
+
+</body>
+
+</html>

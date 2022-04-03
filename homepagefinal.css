@@ -1,0 +1,583 @@
+
+::-webkit-scrollbar {
+    width: .2vw;
+    z-index: 6;
+}
+::-webkit-scrollbar-thumb {
+    background: rgba(170, 170, 170, 0.708);
+    height: 1rem;
+    z-index: 6;
+}
+::-webkit-scrollbar-track {
+    background-color: rgba(255, 255, 255, 0);
+    height: 80vh;
+    z-index: 6;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(123, 123, 123, 0.871);
+    z-index: 6;
+}
+
+body {
+    background: rgb(44, 44, 44);
+    height: 400vh
+}
+.first-section {
+    font-size: 1.2em;
+}
+.first-section p {
+    padding-top: 12px;
+}
+.flex-container {
+    display: flex;
+    align-items: center;
+}
+.second-section-card {
+    background:rgb(44, 44, 44);
+    min-height: 370px;
+    max-height: 370px;
+}
+
+.see-all-btn {
+    background: transparent;
+    border-color: transparent;
+}
+.see-all-btn-col {
+    display: flex;
+    justify-content: end;
+}
+.see-all-btn:focus {
+    background: transparent;
+    border-color: transparent;
+    box-shadow: 0px 0px 0px 0px;
+}
+.see-all-btn:focus-visible {
+    background: transparent;
+    border-color: transparent;
+    
+    box-shadow: 0px 0px 0px 0px;
+}
+.btn-primary:active {
+    color: #fff;
+    background-color: transparent !important;
+    border-color: transparent !important;
+}
+.navbar-col {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+.navbar-btn {
+    border-radius: 50px;
+    background:rgb(2, 2, 2);
+    border-color:rgb(2, 2, 2);
+}
+.first-section-img {
+    width: 100%;
+    height: 5vw;
+}
+.row-remove-margin {
+    margin-bottom: -8px;
+    margin-left: -1px;
+    margin-top: -1px;
+    margin-right: -1px;
+}
+.card-body-section1 {
+    background: rgb(29, 29, 29);
+    color: white;
+}
+.card-body-section2 {
+    color: white;
+    background:rgb(29, 29, 29);
+}
+.card-body-section2 p {
+    color: rgb(177, 174, 174);
+    font-size: 1.1em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    
+}
+.card-body-section2 h5 {
+    font-size: 1.2em;
+    font-weight: 700;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+.card-body-section3 {
+    color: white;
+    background:rgb(29, 29, 29);
+}
+.card-body-section3 p {
+    color: rgb(177, 174, 174);
+    font-size: 1.1em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.card-body-section3 h5 {
+    font-size: 1.2em;
+    font-weight: 700;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+.img-second-section {
+    padding: 20px;
+    background: rgb(29, 29, 29);
+    width: 100%;
+    height: 9vw;
+}
+.img-third-section {
+    padding: 20px;
+    background:rgb(29, 29, 29);
+    border-radius: 36px;
+    width: 100%;
+    height: 9vw;
+}
+.card {
+    border: 0px;
+    background-color: rgb(29, 29, 29);
+    padding-bottom: 10px;
+}
+.container-fluid {
+    padding-left: 42px;
+    padding-right: 42px;
+}
+.rounded-pic {
+    border-radius: 50%;
+}
+.third-section-card {
+    min-height: 370px;
+    max-height: 370px;
+}
+main {
+    padding-left: 330px;
+}
+.arrow1 {
+    margin-left: 15px;
+}
+.arrow2 {
+    margin-left: 0.6em;
+}
+
+  /* nav bar */
+
+  .arrows {
+    position: fixed;
+    top: 0;
+    padding-top: 15px;
+    z-index: 5;
+}
+
+
+.arrow2, .arrow1 {
+    background-color: rgb(59, 59, 59);
+    border-radius: 50%;
+    cursor: pointer;
+    
+}
+
+.profile-picture-button { 
+position: fixed;
+top: 0;
+right: 0;
+padding-right: 15px;
+padding-top: 15px;
+cursor: pointer;
+opacity:0.8;
+z-index: 5;
+}
+
+.profile-picture-top-bar {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.profile-picture-dropdown {
+    background-color: rgba(0, 0, 0, .7);
+    padding-right: 0.4em;
+    padding-left: 0.1em;
+    align-items: center;
+    border-radius: 23px;
+    font-size: 0.9em;
+    margin-right: 60px;
+}
+body > div > div.container-fluid > main > div.container-fluid.pt-3 > div > div.navbar-col.profile-picture-button > div > div > span {
+    font-size: 0.7em;
+    padding-left: 0.9em;
+    font-weight: 700;
+
+}
+
+body > div > div.container-fluid > main > div.container-fluid.pt-3 > div > div.navbar-col.profile-picture-button > div > div > i {
+    font-size: 0.6em;
+}
+body > div > div.container-fluid {
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+.container-fluid {
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+/* footer */
+
+footer {
+    background: #181818;
+    position:fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: white;
+    margin-top: -20px;
+}
+footer img {
+    height: 100px;
+    width: 100px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    padding: 6px;
+}
+.p-song-name {
+    font-size: .9em;
+    margin-top: 30px;
+    /* overflow: hidden;
+    text-overflow: ellipsis; */
+    /* display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical; */
+}
+.p-artist-name {
+    font-size: .7em;
+    margin-top: -10px;
+    margin-left: 40px;
+}
+.main-progress {
+    height: 20%;
+    width: 100%;
+    cursor: grab;
+}
+.bi-play-circle {
+    font-size: 1.2em;
+}
+.volume-progress {
+    height: 5%;
+    width: 25%;
+    cursor: pointer;
+
+}
+.bi-shuffle {
+    font-size: .8em;
+    cursor: pointer;
+}
+.bi-skip-backward {
+    font-size: .8em;
+    cursor: pointer;
+
+}
+.bi-skip-forward {
+    font-size: .8em;
+    cursor: pointer;
+
+}
+.bi-arrow-repeat {
+    font-size: .8em;
+    cursor: pointer;
+
+}
+.bi-heart {
+    font-size: 1.5em;
+    cursor: pointer;
+
+}
+.js-heart {
+    position:absolute;
+    top: 0px;
+    visibility: hidden;
+    color: red;
+    cursor: pointer;
+}
+.visible {
+    visibility: visible;
+}
+.not-visible {
+    visibility: hidden;
+}
+
+.bi-image {
+    font-size: 1.5em;
+    cursor: pointer;
+}
+.bi-list {
+    font-size: 1.5em;
+    cursor: pointer;
+
+}
+.bi-tv {
+    font-size: 1.5em;
+    cursor: pointer;
+
+}
+.bi-volume-up {
+    font-size: 1.5em;
+    cursor: pointer;
+
+}
+.wrapper {
+    overflow: hidden;
+    display: flex;
+}
+.sidebar {
+    position: fixed;
+    background: #000;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    color: #b3b3b3;
+    padding: 20px 0; 
+    min-width: 300px;
+    max-width: 300px;;
+    padding-right: 15px;
+    padding-left: 30px;
+    cursor: pointer;
+    border-right: solid 4px black;
+    border-bottom: solid 222px rgb(24, 24, 24);
+    
+}
+body > div > div.sidebar.pl-3 > div.d-flex.flex-column > div > span {
+    font-size: 0.875rem;
+    line-height: 1rem;
+    font-family: Helvetica,Arial,sans-serif;
+    font-weight: 600
+}
+
+
+body > div > div.sidebar > div.d-flex.flex-column > div:hover {
+    background-color: rgb(65, 63, 63);
+    color: white;
+    
+}
+
+
+   body > div > div.sidebar.pl-3 > div.p-lists > p, body > div > div.sidebar.pl-3 > div.p-lists > div > p {
+    color: #b3b3b3;
+    cursor: pointer;
+  }
+ 
+ 
+
+   body > div > div.sidebar.pl-3 > div.p-lists > div:hover, body > div > div.sidebar.pl-3 > div.p-lists > div > p:hover {
+    color: white;
+  } 
+ 
+  body > div > div.sidebar.pl-3 > div.p-lists > p:hover {
+    color: white;
+  }
+ 
+
+ hr {
+    background-color: rgb(93, 94, 95);
+ } 
+
+  .create .bi {
+    background-color: rgb(148, 150, 151);
+    color: #000;
+    padding-right: 4px;
+    padding-left: 4px;
+    font-size: 1em;
+  }
+  .heart .bi {
+    color: #fff;
+    background: rgb(82, 144, 222);
+    background: linear-gradient(
+      180deg,
+      rgb(97, 20, 168) 20%,
+      rgb(56, 129, 197) 46%,
+      rgb(103, 63, 136) 100%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    padding: 4px 6px;
+    font-size: 10px;
+  }
+   .p-lists {
+    font-size: 0.875rem;
+    color: #b3b3b3;
+    line-height: 1.25rem;
+    text-transform: none;
+    letter-spacing: normal;
+    font-family: Helvetica,Arial,sans-serif;
+    font-size: 0.875rem;
+    color: #b3b3b3;
+    line-height: 1.25rem;
+    text-transform: none;
+    letter-spacing: normal;
+    font-family: Helvetica,Arial,sans-serif;
+    overflow-y: scroll;
+    scrollbar-width: auto;
+    height: 600px;
+
+}
+.p-lists p:hover {
+    color: white;
+}
+  
+  .list-with-scroll-bar { 
+  overflow-y: scroll;
+}
+ */
+  .bi {
+      font-size: 1.3em;
+  }
+
+
+/* End Sidebar  */
+.footer {
+    padding-left: 28px;
+    padding-right: 28px;
+    margin-bottom: -16px;
+    margin-top: -20px;
+}
+
+body > footer > div > div > div:nth-child(2) {
+    padding-top: 20px;
+}
+body > footer > div > div > div:nth-child(1) > div > div:nth-child(1) {
+    padding-left: 0px;
+    margin-top: 2px;
+    margin-bottom: 12px;
+    margin-right: -40px;
+}
+.progress-row {
+    padding-bottom: 12px;
+}
+
+/* hovering */
+.card:hover {
+    box-shadow: 1px 3px 10px 5px rgb(175 173 173);
+}
+.green-play-img {
+    height: 50px;
+    border-radius: 50%;
+    visibility: hidden;
+}
+.first-section .card:hover .green-play-img {
+    visibility: visible;
+    animation: new_row .5s linear;
+    
+}
+.fourth-section-card:hover .green-play-img {
+    animation: new_row 1s linear;
+}
+
+.fourth-section-card {
+    min-height: 370px;
+    max-height: 370px;
+}
+.section-4-img {
+    position:absolute;
+    right: 30px;
+    bottom: 190px;
+    /* visibility: hidden; */
+}
+
+.fourth-section-card:hover .green-play-img {
+    visibility: visible;
+}
+.green-play-img:hover {
+    height: 52px;
+    cursor: pointer;
+    animation: green_play_height 5s linear;
+
+}
+.btn-primary:hover {
+    color: #fff;
+    background-color: transparent;
+    border-color: transparent;
+    text-decoration: underline;
+}
+.p-song-name:hover {
+    text-decoration: underline;
+    cursor:pointer
+}
+.p-artist-name:hover {
+    text-decoration: underline;
+    cursor:pointer
+}
+.bi-heart:hover {
+    color: rgb(127, 122, 122)
+}
+.bi-image:hover {
+    color: rgb(127, 122, 122)
+}
+.bi-image:hover {
+    color: rgb(127, 122, 122)
+}
+.bi-list:hover {
+    color: rgb(127, 122, 122)
+}
+.bi-tv:hover {
+    color: rgb(127, 122, 122)
+}
+.bi-play-circle:hover {
+    color: rgb(127, 122, 122)
+}
+.bi-shuffle:hover {
+    color: rgb(127, 122, 122)
+}
+.bi-skip-backward:hover {
+    color: rgb(127, 122, 122)
+
+}
+.bi-skip-forward:hover {
+    color: rgb(127, 122, 122)
+}
+.bi-arrow-repeat:hover {
+    color: rgb(127, 122, 122)
+}
+
+.second-section-card-hidden {
+    display: none;
+}
+.new-row-animation {
+    animation: new_row 3s linear;
+}
+.hidden-row {
+    margin-top: 30px;
+}
+
+@keyframes new_row {
+    0% {
+        opacity: 0;
+    }
+    50% {
+
+    }
+    100% {
+        opacity: 100;
+    }
+}
+@keyframes green_play_height {
+    0% {
+        height: 50px;
+    }
+    100% {
+        height: 52px;
+    }
+}
